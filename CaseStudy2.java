@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CaseStudy2 {
     static String[] menu = {"Kopi Hitam", "Latte", "Teh Tarik", "Mie Goreng"};
     static int[] price = {15000, 22000, 12000, 18000};
-    static String [][] overall = new String [100][6]; 
+    static String [][] overall = new String [100][9]; 
     static int numData = 0;
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
