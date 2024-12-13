@@ -77,4 +77,31 @@ public class CaseStudy2 {
         System.out.println("3. "+ menu[2] +" - Rp " +  price[2]);
         System.out.println("4. " + menu [3] +" - Rp " +  price[3]);
     }
+    static void displayOverall(){
+        if (numData == 0) {
+            System.out.println("\nThere is no order.");
+        } else {
+            System.out.println("\n==== DAFTAR PESANAN ====");
+            for (int i = 0; i < numData; i++){
+                System.out.println("Nama Pelanggan: " + overall[i][0]);
+                System.out.println("Nomor Meja: " + overall[i][1]);
+                System.out.println("Detail pesanan:");
+                while (true) {
+                for (int j = 2; j < overall[i].length; j++){
+                    if (overall[i][j] == null) {
+                        continue;
+                    } else {
+                        if(j > 7) break;
+                        System.out.println("- " + overall[i][j]);
+                    }
+                    
+                    }
+                    System.out.println("Total Harga Pesanan: " + overall[i][8]);
+                    System.out.println("----------------------------");
+                    break;
+                }
+            }
+            System.out.println();
+        }
+}
 }
