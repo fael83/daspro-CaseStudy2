@@ -41,7 +41,7 @@ public class CaseStudy2 {
         while (true) {
             System.out.print("\nSelect a menu (enter the menu number, or 0 to finish): ");
             int coffee = sc.nextInt();
-            if (coffee >= 1 && coffee <= 4) {
+            if (coffee != 0 && coffee <= 4) {
                 while (true) {
                     System.out.print("Enter the number of item for " + menu[coffee - 1] + ": ");
                     total = sc.nextInt();
@@ -57,14 +57,13 @@ public class CaseStudy2 {
                         break;
                     }
                 }
-            }else if (coffee < 0 && coffee > 4){
+            }else if(coffee >= 4){
                 System.out.println("G ada boss");
-            
-            // else {
-            // String totalAhir = Integer.toString(hasilAkhir);
-            // overall[numData][8] = totalAhir;
-            // break;
-            // }
+            }else { 
+                String totalAhir = Integer.toString(hasilAkhir);
+                overall[numData][8] = totalAhir;
+                break;
+            }
         }
         System.out.println("\nOrder successfully added.");
         System.out.println("Total order price: " + hasilAkhir);
