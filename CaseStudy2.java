@@ -71,6 +71,7 @@ public class CaseStudy2 {
         System.out.println();
         numData += 1;
     }
+
     static void displayMenus(){
         System.out.println("\n===== CAFE MENU =====");
         System.out.println("1. " + menu[0]+ " - Rp " + price[0]);
@@ -78,6 +79,7 @@ public class CaseStudy2 {
         System.out.println("3. "+ menu[2] +" - Rp " +  price[2]);
         System.out.println("4. " + menu [3] +" - Rp " +  price[3]);
     }
+    
     static void displayOverall(){
         if (numData == 0) {
             System.out.println("\nThere is no order.");
