@@ -35,7 +35,7 @@ public class CaseStudy2 {
         overall [numData][1] = sc.next();
         displayMenus(); 
         int sum ;
-        int total = 0;
+        int totalItem = 0;
         int num=2;
         int finalResult =0;
         while (true) {
@@ -44,15 +44,15 @@ public class CaseStudy2 {
             if (coffee != 0 && coffee <= 4 && coffee >= 0) {
                 while (true) {
                     System.out.print("Enter the number of item for " + menu[menuNumber - 1] + ": ");
-                    total = sc.nextInt();
+                    totalItem = sc.nextInt();
                     sum = 0;
-                    if (total <= 0) {
+                    if (totalItem <= 0) {
                         System.out.println("Enter amount greater than 0");
                     } else {
-                        sum += price[menuNumber-1] * total;
+                        sum += price[menuNumber-1] * totalItem;
                         String summ = Integer.toString(sum);
                         finalResult += sum;
-                        overall[numData][num] = menu[menuNumber-1] + " x " + total + " = Rp " + summ;
+                        overall[numData][num] = menu[menuNumber-1] + " x " + totalItem + " = Rp " + summ;
                         num++;
                         break;
                     }
@@ -96,12 +96,11 @@ public class CaseStudy2 {
                     } else {
                         if(j > 7) break;
                         System.out.println("- " + overall[i][j]);
-                    }
-                    
-                    }
-                    System.out.println("Total Order Price: " + overall[i][8]);
-                    System.out.println("----------------------------");
-                    break;
+                    } 
+                }
+                System.out.println("Total Order Price: " + overall[i][8]);
+                System.out.println("----------------------------");
+                break;
                 }
             }
             System.out.println();
