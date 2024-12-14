@@ -104,5 +104,5 @@ public class CaseStudy2 {
             }
             System.out.println();
         }
-}
+    }
 }
